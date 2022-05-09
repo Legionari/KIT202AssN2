@@ -1,0 +1,368 @@
+* {
+margin: 0;
+padding: 0;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+     position:fixed;
+     padding: 40px 80px;
+     display: flex;
+     justify-content: space-evenly;
+     background-color: #463239;
+     align-items:  center;
+     z-index: 3;
+     border-bottom: 1px solid black;
+     top: 0;
+     left: 0;
+     width: 100%;
+}
+
+body {
+    min-height: 150vh;
+    background: #C6AD94;
+
+
+}
+
+.homeheader {
+    position: relative;
+    display: inline-block;
+    color: #FAB3A9;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    Letter-spacing: 2px;
+}
+
+.dropdownMenu {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    background: url(iconActive.png);
+    background-size: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.dropdownMenu.active {
+    background: url(Pie_emote.png);
+    background-size: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #FAB3A9;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    transition: 0.8s;
+    opacity: 0;
+    visibility: hidden;
+
+ 
+}
+.navbar.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.navbar li a {
+    color: black;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.title {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 150px;
+    background-color: #7FB285;
+    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FAB3A9;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+.text {
+    width: 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #463239;
+    text-transform: lowercase;
+    text-align: center;
+    color: #7FB285;
+    font-size: 1.2em;
+    font-weight: 300;
+    overflow: auto;
+
+}
+
+.aboutUs {
+  width: 75%;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #463239;
+  text-transform: lowercase;
+  text-align: center;
+  color: #7FB285;
+  font-size: 1.4em;
+  font-weight: 300;
+  overflow: auto;
+
+}
+
+.blog-posts {
+    list-style: none;
+    visibility: visible;
+
+}
+
+.button {
+    background-color: #463239;
+    border: none;
+    color: white;
+    width: 50%;
+    height: 80px;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: auto;
+    transition-duration: 0.3s;
+    
+}
+
+.button:hover {
+    background-color: #7FB285;
+
+}
+
+.button2 {
+  background-color: #463239;
+  border: none;
+  color: white;
+  width: 8%;
+  height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: auto;
+  transition-duration: 0.3s;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.button2:hover {
+  background-color: #7FB285;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+ 
+.scrolled.fade-in-bottom {
+  animation: fade-in-bottom 1s ease-in-out both;
+}
+ 
+.scrolled.slide-left {
+  animation: slide-in-left 1s ease-in-out both;
+}
+ 
+.scrolled.slide-right {
+  animation: slide-in-right 1s ease-in-out both;
+}
+ 
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ 
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ 
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+ 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.regomate {
+  display: none;
+}
+
+.logein {
+  display: inline;
+  
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#regolink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#switchreg {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #463239;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formInput {
+    width: 75%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #463239;
+    text-transform: lowercase;
+    text-align: center;
+    color: #7FB285;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.formLabel{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border: 1px solid black;
+    margin: auto;
+    background-color: #7FB285;
+    font-weight: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FAB3A9;
+    font-size: 2em;
+    text-align: center;
+}
+
+.lunameLabel{
+  width: 75%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border: 1px solid black;
+  margin: auto;
+  background-color: #7FB285;
+  font-weight: bold;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FAB3A9;
+  font-size: 2em;
+  text-align: center;
+
+}

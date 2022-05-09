@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8" />
+        <script src="login.js" defer></script>
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <u1 class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="create.html">Create Post</a></li>
+            <li><a href="about.html">About</a></li>
+        </u1>
+    
+        <div class="logein">
+            <header>
+                <h1 class="homeheader">Login</h1>
+                <h2 class="dropdownMenu"></h2>
+            </header>
+            <br><br><br><br><br><br><br><br>
+                <form name="login" class="login" action="index.html" novalidate>
+                    <label for="luname" class="formLabel">Username:</label><br>
+                    <input type="text" name="luname" class="formInput" id="luname" placeholder = "Your Username..."><br>
+                    <label for="pw" class="formLabel">Password:</label><br>
+                    <input type="password" name="lpw" id="lpw"  class="formInput" placeholder = "Your Password..."><br><br>
+                    <input class="button" type="submit" name="lsub" id="lsub"> 
+                </form>
+                <br>
+            <p id="regolink">Not a member? Join now by clicking <a id="switchreg" btn="register">Register</a></p>
+        </div>
+        
+        <div class="regomate">
+            <header>
+                <h1 class="homeheader">Register</h1>
+                <h2 class="dropdownMenu"></h2>
+            </header>
+            <br><br><br><br><br><br><br><br>
+                <form name="register" class="register" action="index.html" novalidate>
+                    <label for="runame" id="lunameLabel" class="formLabel">Username:</label><br>
+                    <input type="text" id="runame" name="runame" class="formInput" placeholder = "Your Username..."><br>
+                    <label for="email" class="formLabel">Email:</label><br>
+                    <input type="email" id="remail" name="remail" class="formInput" placeholder = "Your Email Address..."><br>
+                    <label for="pw" class="formLabel">Password:</label><br>
+                    <input type="password" id="rpw" class="formInput" placeholder = "Your Password..."><br><br>
+                    <input class="button" type="submit" name="rsub" id="rsub">
+                </form>
+        </div>
+    </body>
+</html>
