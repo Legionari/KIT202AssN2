@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+
+<?php 
+$title = $body ="";
+
+
+
+
+
+
     <head>
         <title>Create Post</title>
         <meta charset="UTF-8" content=""width=device-width. initial-scale="1.0">
@@ -19,10 +28,10 @@
             <li><a href="create.html">Create Post</a></li>
             <li><a href="about.html">About</a></li>
         </u1>
-            <form name="postForm" action="index.html" novalidate>
-                <input class="title" type="text" id="tpost" placeholder="What's your title?"><br>
-                <input class="text" type="text" id="pcontent" placeholder="Enter your post content here"><br>
-                <input class="button" type="submit" value="Create">
+            <form name="postForm" action="index.html" method="post" novalidate>
+                <input name="title" class="title" type="text" id="tpost" placeholder="What's your title?"><br>
+                <input name="body" class="text" type="text" id="pcontent" placeholder="Enter your post content here"><br>
+                <input name="submit" class="button" type="submit" value="Create">
             </form >
     </body>
 </html>
