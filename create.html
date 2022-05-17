@@ -1,8 +1,30 @@
 <!DOCTYPE html>
 <html>
+<?php
+$db_name = "placeholder";
+$post_table = "blogPosts";
+$connection = 
+
 
 <?php 
 $title = $body ="";
+$titleErr = $bodyErr = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["title"])) {
+      $titleErr = "Please enter a title";
+    } else {
+      $title = test_input($_POST["title"]);
+    }
+
+    if (empty($_POST["body"])) {
+        $bodyErr = "Please enter some text for your post";
+      } else {
+        $body = test_input($_POST["body"]);
+      }
+
+
+    
 
 
 
